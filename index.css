@@ -1,0 +1,150 @@
+body {
+    background-color:  hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.allside {
+    
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+.rightside {
+    display: flex;   
+    flex-direction: column;
+    margin-left: 30px;
+
+}
+.type {
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-top: 25px;
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.title {
+font-family: Fraunces;
+font-weight: 700;
+color: hsl(212, 21%, 14%);
+font-size: 35px;
+width: 250px;
+line-height: 35px;
+margin-bottom: 25px;
+
+
+}
+.info {
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    width: 240px;
+    margin-bottom: 30px;
+    line-height: 25px;
+    
+}
+.price {
+    font-family: Fraunces;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    margin-right: 35px;
+    margin-bottom: 25px;
+}
+.oldprice {
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+    text-decoration: line-through;
+    margin-bottom: 25px;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: 500;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 7px;
+    width: 230px;
+    height: 40px;
+    justify-content: center;
+    border: none;
+    margin-bottom: 25px;
+}
+.addtocartt {
+    margin-left: 10px;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: hsl(158, 36%, 21%);
+
+}
+.image {
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+.prices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 500px) {
+    .allside {
+    
+        background-color: rgb(255, 255, 255);
+        width: 375px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .image {
+        width: 375px;
+        height: 290px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+   }
+   .title {
+    width: 325px;
+    font-size: 32px;
+
+   }
+   .info {
+    width: 295px;
+    line-height: 20px;
+
+   }
+   .price {
+    font-size: 30px;
+    margin-right: 20px;
+   }
+   .oldprice {
+        font-size: 15px;
+        margin-left: 0px;
+   }
+   .button {
+    width: 315px;
+    height: 45px;
+
+   }
+
+}
